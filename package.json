@@ -1,0 +1,15 @@
+{
+  "name": "vulnerable-node-app",
+  "version": "1.0.0",
+  "description": "Deliberately vulnerable Node app for SDLC security lab",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "lodash": "4.17.4",
+    "axios": "0.21.0",
+    "jsonwebtoken": "8.5.0"
+  }
+}
