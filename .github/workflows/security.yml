@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout action
-        uses: actions/checkout@6.0.2
+        uses: actions/checkout@v6.0.2
 
       - name: Aqua Security Trivy
         uses: aquasecurity/trivy-action@v0.36.0
