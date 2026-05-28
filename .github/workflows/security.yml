@@ -25,6 +25,12 @@ jobs:
           ls -a
           find . -maxdepth 2 -type f
 
+      
+      - name: semgrep-action
+        uses: semgrep/semgrep-action@v1
+        with:
+          config: p/security-audit
+
 
       - name: Aqua Security Trivy
         uses: aquasecurity/trivy-action@v0.36.0
@@ -33,7 +39,27 @@ jobs:
           scan-ref: '.'
           severity: 'HIGH,CRITICAL'
           exit-code: '1'
+   
           
+
+
+
+
+  #           - name: semgrep-action
+  # # You may pin to the exact commit or the version.
+  # # uses: semgrep/semgrep-action@713efdd345f3035192eaa63f56867b88e63e4e5d
+  # uses: semgrep/semgrep-action@v1
+  # with:
+  #   # Rules and patterns to search for with semgrep.
+
+  #   config: # optional
+  #   # Access token to post results to the semgrep app.
+
+  #   publishToken: # optional
+          
+
+
+
 # name: <whatever you want to call it>
 
 # on:
