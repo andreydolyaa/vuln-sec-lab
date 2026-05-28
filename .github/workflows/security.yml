@@ -29,7 +29,8 @@ jobs:
       - name: semgrep-action
         uses: semgrep/semgrep-action@v1
         with:
-          config: p/security-audit
+          # config: p/security-audit
+          config: p/auto
 
 
       - name: Aqua Security Trivy
